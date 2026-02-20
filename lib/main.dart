@@ -45,12 +45,12 @@ class MyHomePage extends StatelessWidget {
           Text(appState.current.asLowerCase),
 
        
-          ElevatedButton(
-            onPressed: () {
-              print('button pressed!');
-            },
-            child: Text('Next'),
-          ),
+    ElevatedButton(
+      onPressed: () {
+        appState.getNext();  // ← This instead of print().
+      },
+      child: Text('Next'),
+    ),
 
         ],
       ),
