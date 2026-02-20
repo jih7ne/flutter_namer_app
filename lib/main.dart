@@ -34,10 +34,10 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     var appState = context.watch<MyAppState>();
 
-    return Scaffold(
+     return Scaffold(
       body: Column(
         children: [
-          Text('A random idea:'),
+          Text('A random AWESOME idea:'),  // ← Example change.
           Text(appState.current.asLowerCase),
         ],
       ),
